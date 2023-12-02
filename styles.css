@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* fix all backdrop colours*/
+
+* , *::before , *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(300deg, rgb(23, 75, 38), rgb(33, 87, 73) 1%, rgb(24, 84, 55));
+    display: flex;
+    font-family: Helvetica ;
+    font-display: swap;
+    height: inherit;
+    justify-content: center; 
+}
+
+.wrapper {
+    background: rgb(133, 186, 140);
+    backdrop-filter: blur();
+    border-radius: 12px;
+    box-shadow: 10px 12px 12px rgb(12, 64, 54);
+    flex-basis: 420px;
+    height: 560px;
+    padding: 30px 40px;
+}
+
+.screen {
+    background: #ffffff;
+    border-radius: 9px;
+    border: 0.5px solid #007bb5; 
+    box-shadow: 0 4px 15px;
+    color: rgb(3, 38, 31);
+    font-size: 39px;
+    overflow: auto;
+    padding: 8px 10px;
+    width: 326px;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 0;
+
+}
+
+.calc-button {
+    background: rgba(250, 255, 249, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.01);
+    border-radius: 15px;
+    box-shadow: 0 1px 15px rgb(25, 87, 75);
+    color: #022600;
+    flex-basis: 21%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 58px;
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgb(161, 221, 215);
+    border-radius: 16px;
+    box-shadow: 0 1px 15px rgb(25, 87, 75);
+    color: rgb(213, 251, 247);
+    background: rgb(79, 143, 138);
+}
+
+.calc-button:last-child:hover{
+    background-color: rgb(180, 231, 217);
+    color: rgb(124, 124, 163);
+}
+
+.calc-button:last-child:active{
+    background-color: #ffef78
+}
+
+.calc-button:hover{
+    background-color: rgb(192, 234, 201);
+}
+
+.calc-button:active{
+    background-color: #ffef78;
+}
+
+.clear {
+    flex-basis: 47%;
+}
+
+.equals {
+    flex-basis: 73%;
+}
